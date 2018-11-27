@@ -305,7 +305,7 @@ input,
 select,
 textarea {
 	color: #1a1a1a;
-	font-family: Merriweather, Georgia, serif;
+	font-family: 'yuG', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -803,7 +803,7 @@ a:active {
 }
 
 .main-navigation {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	/*font-family: Montserrat, "Helvetica Neue", sans-serif;*/
 }
 
 .site-footer .main-navigation {
@@ -816,14 +816,14 @@ a:active {
 }
 
 .main-navigation li {
-	border-top: 1px solid #d1d1d1;
+	/*border-top: 1px solid #d1d1d1;*/
 	position: relative;
 }
 
 .main-navigation a {
 	color: #1a1a1a;
 	display: block;
-	line-height: 1.3125;
+	line-height: 0.7;
 	outline-offset: -1px;
 	padding: 0.84375em 0;
 }
@@ -1702,12 +1702,13 @@ blockquote:after,
 }
 
 .entry-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: 'yuG', sans-serif;
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-weight: 700;
 	line-height: 1.25;
 	margin-bottom: 1em;
+	text-transform: uppercase;
 }
 
 .entry-title a {
@@ -3016,6 +3017,7 @@ p > video {
 
 	.main-navigation {
 		margin: 0 -0.875em;
+		text-transform: uppercase;
 	}
 
 	.main-navigation .primary-menu,
@@ -3028,6 +3030,7 @@ p > video {
 	}
 
 	.main-navigation a {
+		color: white;
 		outline-offset: -8px;
 		padding: 0.65625em 0.875em;
 		white-space: nowrap;
@@ -4085,4 +4088,83 @@ p > video {
 
 .flex-control-paging li a.flex-active{
 	background: white !important;
+}
+
+.mainNavMenu{
+	position: absolute;
+	z-index: 1;
+	left: -1em;
+	top: 18rem;
+	font-family: 'yuG';
+}
+
+.SocialNavMenu{
+	position: absolute;
+	z-index: 1;
+	left: -1em;
+	top: 18rem;
+}
+
+.slides li.ms-image.flex-active-slide .logo_home span{
+	content: "";
+	position: absolute;
+	z-index: 11;
+	left: 4em;
+	top: 14rem;
+	width: 25rem;
+	height: 25rem;
+}
+.slides li.slide-136.flex-active-slide .logo_home span
+{
+	background: url('img/fazenda12.png');
+	background-repeat: no-repeat;
+	background-size: 25rem;
+}
+.slides li.slide-138.flex-active-slide .logo_home span
+{
+	background: url('img/fazenda12.png');
+	background-repeat: no-repeat;
+	background-size: 25rem;
+}
+.slides li.slide-143.flex-active-slide .logo_home span
+{
+	background: url('img/fazenda3.png');
+	background-repeat: no-repeat;
+	background-size: 25rem;
+}
+
+.insta {
+	content: "";
+	position: absolute;
+	z-index: 11;
+	left: 1em;
+	top: 1rem;
+	width: 1rem;
+	height: 1rem;
+	background: url('img/menuSocial/instagram-blanc.png');
+	background-repeat: no-repeat;
+	background-size: 1rem;
+}
+
+.linkdin{
+	content: "";
+	position: absolute;
+	z-index: 11;
+	left: 1em;
+	top: 3rem;
+	width: 1rem;
+	height: 1rem;
+	background: url('img/menuSocial/linkedin_blanc.png');
+	background-repeat: no-repeat;
+	background-size: 1rem;
+}
+
+@font-face {
+	font-family: 'yu';
+	src: url('font/yu.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'yuG';
+	src: url('font/yugothic.ttf') format('truetype');
 }

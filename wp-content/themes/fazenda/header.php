@@ -30,11 +30,30 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 	
 		<?php echo do_shortcode('[metaslider id="135"]'); ?>
-		
-		<header id="masthead" class="site-header" role="banner">
-			<section class="reseaux">
-			</section>
-			
+
+        <div>
+            <a class='insta' href='/wordpress/'><span></span></a>
+            <a class='linkdin' href='/wordpress/'><span></span></a>
+        </div>
+
+		<header id="masthead" class="site-header mainNavMenu" role="banner">
+            <?php
+                if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
+                <div id="secondary" class="secondary">
+
+                    <?php if ( has_nav_menu( 'primary' ) ) : ?>
+                        <nav id="site-navigation" class="main-navigation" role="navigation">
+                            <?php
+                            // Primary navigation menu.
+                            wp_nav_menu( array(
+                                'menu_class'     => 'nav-menu',
+                                'theme_location' => 'primary',
+                            ) );
+                            ?>
+                        </nav><!-- .main-navigation -->
+                    <?php endif; ?>
+                </div><!-- .secondary -->
+            <?php endif; ?>
 		</header><!-- .site-header -->
 
 		<div id="content" class="site-content">

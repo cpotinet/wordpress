@@ -39,6 +39,7 @@ class MetaSlide {
     public function set_slider( $id ) {
         $this->slider = get_post( $id );
         $this->settings = get_post_meta( $id, 'ml-slider_settings', true );
+        $this->settings = get_post_meta( $id, 'ml-slider_settings', true );
     }
 
 
@@ -215,7 +216,7 @@ class MetaSlide {
             if (isset($attributes['src'])) unset($attributes['src']);
             return wp_get_attachment_image($attachment_id, apply_filters('metaslider_default_size', 'full', $this->slider), false, $attributes);
         }
-        $html = "<div class='mybackground'></div><img";
+        $html = "<div class='mybackground'></div><a class='logo_home' href='/wordpress/'><span></span></a><img";
         foreach ( $attributes as $att => $val ) {
             if ( strlen( $val ) ) {
                 $html .= " " . $att . '="' . esc_attr( $val ) . '"';
@@ -333,7 +334,6 @@ class MetaSlide {
             $return .= "<li {$selected} ><a tabindex='0' href='#' data-tab_id='tab-{$pos}'>{$tab['title']}</a></li>";
 
         }
-
         $return .= "</ul>";
 
         return $return;
