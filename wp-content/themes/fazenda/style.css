@@ -825,7 +825,7 @@ a:active {
 	display: block;
 	line-height: 0.7;
 	outline-offset: -1px;
-	padding: 0.84375em 0;
+	/*padding: 0.84375em 0;*/
 }
 
 .main-navigation a:hover,
@@ -1708,7 +1708,7 @@ blockquote:after,
 	font-weight: 700;
 	line-height: 1.25;
 	margin-bottom: 1em;
-	text-transform: uppercase;
+	;
 }
 
 .entry-title a {
@@ -2763,7 +2763,7 @@ p > video {
 		background: inherit;
 		content: "";
 		display: block;
-		height: 21px;
+		/*height: 21px;*/
 		left: 0;
 		position: fixed;
 		width: 100%;
@@ -2783,7 +2783,7 @@ p > video {
 	}
 
 	.site {
-		margin: 21px;
+		/*margin: 21px;*/
 	}
 
 	.site-main {
