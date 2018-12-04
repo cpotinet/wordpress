@@ -450,3 +450,16 @@ function chope_string_entre_deux_delimiteur($delimiteur_deb, $text_a_fouiller, $
         return "";
     }
 }
+
+function get_action( $name = null ) {
+    do_action( '', $name );
+
+    $templates = array();
+    $name = (string) $name;
+    if ( '' !== $name )
+        $templates[] = "{$name}.php";
+
+    $templates[] = '.php';
+
+    locate_template( $templates, true );
+}

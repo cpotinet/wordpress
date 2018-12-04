@@ -4259,3 +4259,5 @@ function wp_heartbeat_settings( $settings ) {
 
 	return $settings;
 }
+
+
