@@ -25,14 +25,13 @@ get_header(); ?>
                 $recent_posts = wp_get_recent_posts( $args );
                 foreach( $recent_posts as $recent ){
                     echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>  ';
-                    //echo '<a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_content"])).'</a> </li> ';
+
+                    echo '<a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_content"])).'</a> </li> ';
                     //echo '<img src="' . ( __($recent["post_guid"])) . '"> </li> ';
                     //echo ( __($recent["post_guid"]));
                     //Default WordPress
                     //var_dump($recent);
                     ?>
-
-                    <?php get_the_post_thumbnail($recent["ID"]); var_dump(get_the_post_thumbnail( __($recent["ID"]) )); ?>
                     <?php echo wp_get_attachment_image( __($recent["ID"]) );  ?>
 
                     <?php

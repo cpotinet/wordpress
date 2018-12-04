@@ -10,7 +10,16 @@
  */
 ?>
 
-		</div><!-- .site-content -->
+</div><!-- .site-content -->
+        <?php global $post; $post_slug=$post->post_name;
+        if($post_slug == 'mentions-legales')
+        {
+            echo '<footer id="colophon" class="site-footer" role="contentinfo">';
+            echo 'Copyright 2018 - Tous droits réservés';
+            echo '</footer>';
+        }
+        else{
+        ?>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
@@ -53,10 +62,12 @@
 					the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 				}
 				?>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?>
-				</a>
+
 			</div><!-- .site-info -->
+
+            <?php
+            }
+            ?>
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
 </div><!-- .site -->

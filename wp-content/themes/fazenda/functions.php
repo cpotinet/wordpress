@@ -435,3 +435,18 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
 add_theme_support( 'post-thumbnails', array( 'post' ) ); // Ajouter les images à la une sur les articles uniquement
 
+function chope_string_entre_deux_delimiteur($delimiteur_deb, $text_a_fouiller, $delimiteur_fin)
+{
+    $text_a_fouiller = "recalage_auto".$text_a_fouiller;
+    $explode_phase_1 = explode($delimiteur_fin, $text_a_fouiller);
+    if($explode_phase_1[0] != "")
+    {
+        $explode_phase_2 = explode($delimiteur_deb, $explode_phase_1[0]);
+        if($explode_phase_2[1] != "")
+        {
+            return $explode_phase_2[1];
+        }
+    } else {
+        return "";
+    }
+}

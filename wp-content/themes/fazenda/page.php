@@ -33,7 +33,14 @@ get_header(); ?>
 
 	</main><!-- .site-main -->
 
-	<?php get_sidebar( 'content-bottom' ); ?>
+    <?php global $post; $post_slug=$post->post_name;
+
+    if($post_slug == 'blog')
+    {
+        get_sidebar( 'content-bottom' );
+
+    }
+    ?>
 
 </div><!-- .content-area -->
 
