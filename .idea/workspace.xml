@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d1a479-6914-4c43-8ac1-553a616e120e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/home.php" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/sidebar-content-bottom.php" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/sidebar-content-bottom.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sidebar-content-bottom.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/sidebar-content-bottom.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="39" column="97" lean-forward="true" selection-start-line="39" selection-start-column="97" selection-end-line="39" selection-end-column="97" />
+            <state relative-caret-position="376">
+              <caret line="42" column="69" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="42" selection-end-column="69" />
               <folding>
                 <marker date="1543935147376" expanded="true" signature="1779:1901" ph="..." />
               </folding>
@@ -42,11 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="409">
               <caret line="3383" column="5" lean-forward="true" selection-start-line="3383" selection-start-column="5" selection-end-line="3383" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -174,12 +167,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/fazenda/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/sidebar-content-bottom.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fazenda/home.php" />
       </list>
     </option>
   </component>
@@ -278,12 +271,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543241230577</updated>
       <workItem from="1543241233711" duration="25538000" />
-      <workItem from="1543824306192" duration="35206000" />
+      <workItem from="1543824306192" duration="35365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60744000" />
+    <option name="totallyTimeSpent" value="60903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -654,29 +647,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="76" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/sidebar-content-bottom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="39" column="97" lean-forward="true" selection-start-line="39" selection-start-column="97" selection-end-line="39" selection-end-column="97" />
-          <folding>
-            <marker date="1543935147376" expanded="true" signature="1779:1901" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,6 +720,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="3383" column="5" lean-forward="true" selection-start-line="3383" selection-start-column="5" selection-end-line="3383" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/sidebar-content-bottom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="42" column="69" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="42" selection-end-column="69" />
+          <folding>
+            <marker date="1543935147376" expanded="true" signature="1779:1901" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding />
         </state>
       </provider>
