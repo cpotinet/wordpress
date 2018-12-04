@@ -1,16 +1,14 @@
 <?php
-/**
- * The template for the content bottom widget areas on posts and pages
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
-?>
-<h2>Recent Posts</h2>
+
+get_header(); ?>
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+            <h2>Recent Posts</h2>
             <ul>
                 <?php
-                $args = array( 'numberposts' => '10', 'tax_query' => array(
+                $args = array( 'numberposts' => '1', 'tax_query' => array(
                     array(
                         'taxonomy' => 'post_format',
                         'field' => 'slug',
@@ -37,8 +35,15 @@
                     <?php get_the_post_thumbnail($recent["ID"]); var_dump(get_the_post_thumbnail( __($recent["ID"]) )); ?>
                     <?php echo wp_get_attachment_image( __($recent["ID"]) );  ?>
 
-                <?php
+                    <?php
                 }
                 wp_reset_query();
                 ?>
-</ul>
+            </ul>
+
+        </main><!-- .site-main -->
+    </div><!-- .content-area -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+<?php

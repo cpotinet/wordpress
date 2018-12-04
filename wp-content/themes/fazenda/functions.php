@@ -432,3 +432,6 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+add_theme_support( 'post-thumbnails', array( 'post' ) ); // Ajouter les images à la une sur les articles uniquement
+
