@@ -5,9 +5,9 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-            <h2>Recent Posts</h2>
-            <ul>
+            <ul class="tab_article" >
                 <?php
+                //récupération article récents (numbersposts => 1
                 $args = array( 'numberposts' => '1', 'tax_query' => array(
                     array(
                         'taxonomy' => 'post_format',
@@ -23,10 +23,47 @@ get_header(); ?>
                     )
                 ) );
                 $recent_posts = wp_get_recent_posts( $args );
+
+                //Affichage du postes
                 foreach( $recent_posts as $recent ){
-                    echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>  ';
                     $soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_content"]), '</h2>');
                     $content = str_replace( $soustitre, '', $recent["post_content"]);
+                    ?>
+
+                        <div class="article_entier">
+                            <div >
+                                <h2 >
+                                    <div class="moncercle article_titre"  style="display: inline-block">
+
+                                    </div>
+                                    <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
+                                </h2>
+                            </div>
+                                <div style="color: #4fd1ff">
+                                    <?php echo $soustitre; ?>
+                                </div>
+                                <div>
+                                    <?php echo $content; ?>
+                                </div>
+
+
+                                <div class="article_bouton">
+                                    <div class="divButtonArticle">
+                                        <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
+                                    </div>
+                                    <?php echo ''; ?>
+                                </div>
+                        </div>
+                        <div class="article_image">
+                            <?php echo get_the_post_thumbnail( __($recent["ID"]) ); ?>
+                        </div>
+                    </div>
+
+                    <?php
+                    /*
+                    echo '<div>';
+                    echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>  ';
+
 
                     echo '<br/>';
                     echo $soustitre;
@@ -39,6 +76,8 @@ get_header(); ?>
                     echo '</div>';
                     echo '<br/>';
                     echo get_the_post_thumbnail( __($recent["ID"]) );
+                    echo '</div>';
+                    */
                     ?>
 
                     <?php

@@ -3143,7 +3143,7 @@ p > video {
 	.content-area {
 		float: left;
 		margin-right: -100%;
-		width: 70%;
+		width: 100%;
 	}
 
 	.entry-header,
@@ -4123,7 +4123,7 @@ p > video {
 	left: 4em;
 	top: 14rem;
 	width: 25rem;
-	height: 25rem;
+	height: 3rem;
 }
 
 .slides li.ms-image.flex-active-slide .logo_home_commun span
@@ -4134,7 +4134,7 @@ p > video {
 	left: 4em;
 	top: 14rem;
 	width: 25rem;
-	height: 25rem;
+	height: 3rem;
 	background: url('img/fazenda3.png');
 	background-repeat: no-repeat;
 	background-size: 25rem;
@@ -4220,7 +4220,7 @@ p > video {
 }
 
 .divButtonArticle{
-	background-color: cornflowerblue;
+	background-color: #4fd1ff;
 	width: 1.5em;
 	height: 1.5em;
 	display: flex;
@@ -4232,4 +4232,42 @@ p > video {
 .policy-mentions-legales
 {
 	font-weight: bold;
+}
+
+.moncercle{
+	background:#4fd1ff;
+	border-radius:50%;
+	width:12px;
+	height:12px;
+}
+
+.tab_article{
+	display: inline-flex;
+}
+
+.article_entier
+{
+	display: inline-block;
+	width: 26em;
+}
+
+.article_titre{
+	display: inline-block;
+}
+
+.article_bouton{
+	padding-left: 80%;
+}
+
+.article_image{
+	display: inline-block;
+	width: 45em;
+	height: 100%;
+}
+
+.article_lien{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
 }

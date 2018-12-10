@@ -28,20 +28,30 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
         <?php global $post; $post_slug=$post->post_name;
-        if($post_slug == 'bidule2')
+        if($post_slug == 'accueil')
         {
             echo do_shortcode('[metaslider id="135"]');
         }
-
-        if($post_slug == 'blog' || $post_slug == 'contact' || $post_slug == 'mentions-legales')
+        else
         {
-            echo do_shortcode('[metaslider id="195"]');
+            if($post_slug == 'blog' || $post_slug == 'contact' || $post_slug == 'mentions-legales')
+            {
+                echo do_shortcode('[metaslider id="195"]');
+            }
+            else{
+                if($post_slug == 'l-agence')
+                {
+                    echo do_shortcode('[metaslider id="190"]');
+                }
+                else
+                {
+                    echo do_shortcode('[metaslider id="135"]');
+                }
+            }
+
         }
 
-        if($post_slug == 'l-agence')
-        {
-            echo do_shortcode('[metaslider id="190"]');
-        }
+
 		 ?>
 
         <div>

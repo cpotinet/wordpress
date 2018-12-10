@@ -25,7 +25,7 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
             <div class="site-info">
-                <a href="/wordpress/mentions-legales" class="policy-mentions-legales">mention legales</a>
+                <a href="/wordpress/mentions-legales" class="policy-mentions-legales">mention légales - </a>
 				<?php echo 'Copyright 2018 - Tous droits réservés'; ?>
 			</div><!-- .site-info -->
 
