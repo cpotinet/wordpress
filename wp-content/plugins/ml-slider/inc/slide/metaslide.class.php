@@ -211,12 +211,26 @@ class MetaSlide {
      */
     public function build_image_tag($attributes) {
         $attachment_id = $this->get_attachment_id();
-        
+        $html = '';
         if (('disabled' == $this->settings['smartCrop'] || 'disabled_pad' == $this->settings['smartCrop']) && ('image' == $this->identifier || 'html_overlay' == $this->identifier)) {
             if (isset($attributes['src'])) unset($attributes['src']);
             return wp_get_attachment_image($attachment_id, apply_filters('metaslider_default_size', 'full', $this->slider), false, $attributes);
         }
-        $html = "<div class='mybackground'></div><a class='logo_home' href='/wordpress/'><span></span></a><img";
+        if($this->slider->ID == 135)
+        {
+            $html = "<div class='mybackground'></div><a class='logo_home' href='/wordpress/'><span></span></a><img";
+        }
+
+        if($this->slider->ID == 195)
+        {
+            $html = "<div class='site_commun'></div><a class='logo_home_commun' href='/wordpress/'><span></span></a><img";
+        }
+
+        if($this->slider->ID == 190)
+        {
+            $html = "<div class='mybackground'></div><a class='logo_home_agence' href='/wordpress/'><span></span></a><img";
+        }
+
         foreach ( $attributes as $att => $val ) {
             if ( strlen( $val ) ) {
                 $html .= " " . $att . '="' . esc_attr( $val ) . '"';

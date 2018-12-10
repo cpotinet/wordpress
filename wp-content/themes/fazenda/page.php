@@ -19,6 +19,7 @@ get_header(); ?>
         if($post_slug == 'blog')
         {
             get_action( 'blog' );
+
         }
         ?>
 	</main><!-- .site-main -->

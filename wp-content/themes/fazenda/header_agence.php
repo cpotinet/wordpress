@@ -20,6 +20,9 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
+
+
+				
 </head>
 
 <body <?php body_class(); ?>>
@@ -27,22 +30,7 @@
 	<div class="site-inner">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
-        <?php global $post; $post_slug=$post->post_name;
-        if($post_slug == 'bidule2')
-        {
-            echo do_shortcode('[metaslider id="135"]');
-        }
-
-        if($post_slug == 'blog' || $post_slug == 'contact' || $post_slug == 'mentions-legales')
-        {
-            echo do_shortcode('[metaslider id="195"]');
-        }
-
-        if($post_slug == 'l-agence')
-        {
-            echo do_shortcode('[metaslider id="190"]');
-        }
-		 ?>
+        <?php echo do_shortcode('[metaslider id="190"]'); ?>
 
         <div>
             <a class='insta' href='/wordpress/'><span></span></a>
