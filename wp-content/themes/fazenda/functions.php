@@ -463,3 +463,9 @@ function get_action( $name = null ) {
 
     locate_template( $templates, true );
 }
+
+function chope_shortcode_dans_article($nom_shortcode, $text)
+{
+
+
+}

@@ -8,46 +8,73 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="width: 99%">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php twentysixteen_excerpt(); ?>
+    <?php
+    $post = get_post();
+    $content = $post->post_content;
+    $shortcodes = chope_string_entre_deux_delimiteur('[metaslider',  $content, ']');
+    //var_dump($shortcodes);
+    $diapo1 = '[metaslider'. $shortcodes .']' ;
+    //var_dump($diapo1);
+    $content = str_replace( $diapo1, '', $content);
+    $diapo2 = '[metaslider'. chope_string_entre_deux_delimiteur('[metaslider',  $content, ']').']';
+    $content = str_replace( $diapo2, '', $content);
+    //var_dump($content);
+    //var_dump('content : ' . $content);
+    //var_dump($post->post_content);
+    $soustitre = chope_string_entre_deux_delimiteur('<h2>',  $content, '</h2>');
+    $content = str_replace( $soustitre, '', $content);
+    $images = chope_string_entre_deux_delimiteur('<img',  $content, '/>');
+    $img1 = '<img' . $images.'/>';
+    //var_dump('soustitre : ' . $soustitre);
+    //var_dump('image 1 : ' . $img1 );
+    $content = str_replace( $img1, '', $content);
+    //var_dump($img1);
+    $img2 = chope_string_entre_deux_delimiteur('<img',  $content, '/>');
+    //var_dump('<img' . $img2.'</img>' );
+    $content = str_replace( $img2, '', $content);
+    //var_dump($content);
+    $explode = explode('&nbsp;', $content );
 
-	<?php twentysixteen_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
-			the_content();
+    echo '<div style="height:100%; width:100%">';
+    echo do_shortcode($diapo1);
+    echo '</div>';
+    echo '<div style="height:100%; width:100%; padding-top: 2%;">';
+    echo $soustitre;
+    echo '</div>';
+    echo '<div>';
+        echo '<div>';
+                echo '<div style="width: 100%; height: 100%; padding-top: 2%;padding-bottom: 2%;">';
+                    echo $explode[0];
+                echo '</div>';
 
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
+                echo '<div style="display: inline; width: 100%">';
+                    echo '<div style="display: inline ; width: 100%">';
+                    echo  '<img ' . $img1.'</img>' ;
+                    echo '</div>';
+                    echo '<div style="display: inline ; width: 100%">';
+                    echo '<img ' . $img2.'</img>' ;
+                    echo '</div>';
+                echo '</div>';
 
-			if ( '' !== get_the_author_meta( 'description' ) ) {
-				get_template_part( 'template-parts/biography' );
-			}
-		?>
-	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php twentysixteen_entry_meta(); ?>
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
+            echo '<div style="padding-top: 10%;padding-bottom: 2%;">';
+            echo $explode[1];
+            echo '</div>';
+        echo '</div>';
+
+    echo '</div>';
+    echo '<div style="height:100%; width:100%">';
+    echo do_shortcode($diapo2);
+    echo '</div>';
+
+    //echo $content;
+    ?>
+
+
 </article><!-- #post-## -->

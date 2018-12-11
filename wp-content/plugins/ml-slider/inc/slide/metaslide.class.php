@@ -220,16 +220,28 @@ class MetaSlide {
         {
             $html = "<div class='mybackground'></div><a class='logo_home' href='/wordpress/'><span></span></a><img";
         }
-
-        if($this->slider->ID == 195)
-        {
-            $html = "<div class='site_commun'></div><a class='logo_home_commun' href='/wordpress/'><span></span></a><img";
+        else{
+            if($this->slider->ID == 195)
+            {
+                $html = "<div class='site_commun'></div><a class='logo_home_commun' href='/wordpress/'><span></span></a><img";
+            }
+            else
+            {
+                if($this->slider->ID == 190)
+                {
+                    $html = "<div class='mybackground'></div><a class='logo_home_agence' href='/wordpress/'><span></span></a><img";
+                }
+                else
+                {
+                    $html = "<img";
+                }
+            }
         }
 
-        if($this->slider->ID == 190)
-        {
-            $html = "<div class='mybackground'></div><a class='logo_home_agence' href='/wordpress/'><span></span></a><img";
-        }
+
+
+
+
 
         foreach ( $attributes as $att => $val ) {
             if ( strlen( $val ) ) {

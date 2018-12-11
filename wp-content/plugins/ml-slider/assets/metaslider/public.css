@@ -100,7 +100,7 @@ body .metaslider .flexslider .flex-direction-nav li {
     -moz-box-shadow: none;
     -o-box-shadow: none;
     border: 0;
-    margin: 0 0 40px;
+    /*margin: 0 0 40px;*/
     max-width: none;
     max-height: none;
 }

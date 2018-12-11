@@ -3137,7 +3137,7 @@ p > video {
 	}
 
 	.site-content {
-		padding: 0 4.5455%;
+		padding: 0px 10% 5% 6%;;
 	}
 
 	.content-area {
@@ -4059,8 +4059,21 @@ p > video {
 	background: url('img/fond_bleu.jpg');
 }
 
+#metaslider_135 li img{
+	width: calc(100% - 31rem) !important;
+	margin-left: 31rem !important;
+	height: 100% !important;
+	object-fit: cover;
+}
 
-.flexslider li img{
+#metaslider_195 li img{
+	width: calc(100% - 31rem) !important;
+	margin-left: 31rem !important;
+	height: 100% !important;
+	object-fit: cover;
+}
+
+#metaslider_190 li img{
 	width: calc(100% - 31rem) !important;
 	margin-left: 31rem !important;
 	height: 100% !important;
@@ -4219,6 +4232,11 @@ p > video {
 	color: white;
 }
 
+.aButtonArticle:hover
+{
+	color: white;
+}
+
 .divButtonArticle{
 	background-color: #4fd1ff;
 	width: 1.5em;
@@ -4248,7 +4266,7 @@ p > video {
 .article_entier
 {
 	display: inline-block;
-	width: 26em;
+	width: 25em;
 }
 
 .article_titre{
@@ -4256,12 +4274,12 @@ p > video {
 }
 
 .article_bouton{
-	padding-left: 80%;
+	padding-left: 92%;
 }
 
 .article_image{
 	display: inline-block;
-	width: 45em;
+	width: 48em;
 	height: 100%;
 }
 
@@ -4270,4 +4288,8 @@ p > video {
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.article_ecrit{
+	width: 86%
 }

@@ -26,11 +26,15 @@ get_header(); ?>
 
                 //Affichage du postes
                 foreach( $recent_posts as $recent ){
-                    $soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_content"]), '</h2>');
-                    $content = str_replace( $soustitre, '', $recent["post_content"]);
+
+                    //var_dump($recent);
+                    //die();
+                    $soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_excerpt"]), '</h2>');
+                    $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
                     ?>
 
                         <div class="article_entier">
+                        <div class="article_ecrit">
                             <div >
                                 <h2 >
                                     <div class="moncercle article_titre"  style="display: inline-block">
@@ -47,12 +51,14 @@ get_header(); ?>
                                 </div>
 
 
+
                                 <div class="article_bouton">
                                     <div class="divButtonArticle">
                                         <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
                                     </div>
                                     <?php echo ''; ?>
                                 </div>
+                            </div>
                         </div>
                         <div class="article_image">
                             <?php echo get_the_post_thumbnail( __($recent["ID"]) ); ?>

@@ -17,9 +17,6 @@ get_header(); ?>
 
 			// Include the single post content template.
 			get_template_part( 'template-parts/content', 'single' );
-
-
-
 			// End of the loop.
 		endwhile;
 		?>
