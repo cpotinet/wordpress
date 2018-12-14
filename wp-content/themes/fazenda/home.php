@@ -92,7 +92,10 @@ get_header(); ?>
                 ?>
             </ul>
 
-			<div class="fil_instagram"
+			<div class="fil_instagram">
+				<div style="display:none;">
+					<?php echo apply_filters( '', [instagram-feed] ); ?>
+				</div>
 				<?php echo do_shortcode('[instagram-feed]'); ?>
 			</div>
         </main><!-- .site-main -->
