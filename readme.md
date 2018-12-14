@@ -1,8 +1,8 @@
-# 1 - Initialisation projet
+﻿# 1 - Initialisation projet
 
 ## 1 - Récupération du projet
 
-1.1 - Allé au dossier où l'on veut que le projet soit via
+1.1 - Aller au dossier où l'on veut que le projet soit via
 cd / => racine du pc en utilisant cmder (utilitaire qui crée une invite de commande et rend plus lisible)
 
 donc pour arriver dans le dossier htdocs de xampp
@@ -12,7 +12,7 @@ donc pour arriver dans le dossier htdocs de xampp
 
 > git clone https://github.com/cpotinet/wordpress.git
 
-1.3 - Allé au dossier du répertoire (ici wordpress) dans le même terminal que les autres commandes
+1.3 - Aller au dossier du répertoire (ici wordpress) dans le même terminal que les autres commandes
 
 > cd worpress
 
@@ -45,32 +45,36 @@ ENJOY!
 
 # 2 - GIT
 
-## 1 Afin de permettre un envoie sur les sereur de github
+## 1 Afin de permettre un envoi sur les serveurs de github
 
-Créer une instance de commit en ajoutant les dossier 
+Aller à la racine de projet:
+cd \xampp/htdocs/wordpress
 
-Pour plusieurs dossier
->git add . 
+Pour voir s'il y a des fichiers modifiées
+git status
+
+Pour plusieurs elements
+git add . 
 
 pour un fichier (recommandé)
->git add [nomFichier]
+git add [nomFichier]
 
 ### 2 - Créer le commit 
 
 Faire un commit des fichiers ajouter
->git commit -m "message à mettre"
+git commit -m "message à mettre"
 
 === Permet de mettre un message au commit indispensable pour avoir des traces de l'activité
 
 ### 3 Push
 
 Envoyer au serveur
->git push
+git push
 
 ## 4 Recupérer le code 
 
 Permet de rapatrier le code rajouter sur son PC en local
->git pull
+git pull
 
 # 3 - Régle de nommage 
 
