@@ -830,7 +830,8 @@ a:active {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	color: #007acc;
+    color: white !important;
+    font-weight: 800 !important;
 }
 
 .main-navigation .current-menu-item > a,
@@ -4247,8 +4248,7 @@ p > video {
 
 }
 
-.policy-mentions-legales
-{
+.policy-mentions-legales{
 	font-weight: bold;
 }
 
@@ -4262,9 +4262,7 @@ p > video {
 .tab_article{
 	display: inline-flex;
 }
-
-.article_entier
-{
+.article_entier{
 	display: inline-block;
 	width: 25em;
 }
@@ -4292,4 +4290,9 @@ p > video {
 
 .article_ecrit{
 	width: 86%
+}
+
+.home_extract_content{
+	max-height: 5rem;
+	overflow: hidden;
 }

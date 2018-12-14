@@ -20,9 +20,20 @@ get_header(); ?>
         {
             get_action( 'blog' );
         }
-        ?>
+		
+		?>	
+		<div class="post_head">
+			<div class="post_title">
+				<?php  echo $post->post_title; ?>
+			</div>
+			<div>
+				<!-- autres elem entete -->
+			</div>
+		</div>
+		<div class="post_content">
+			<?php echo $post->post_content; ?>
+		</div>
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

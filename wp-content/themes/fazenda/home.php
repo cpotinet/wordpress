@@ -46,8 +46,8 @@ get_header(); ?>
                                 <div style="color: #4fd1ff">
                                     <?php echo $soustitre; ?>
                                 </div>
-                                <div>
-                                    <?php echo $content; ?>
+                                <div class="home_extract_content">
+                                    <?php echo $recent["post_content"]; ?>
                                 </div>
 
 
@@ -92,9 +92,10 @@ get_header(); ?>
                 ?>
             </ul>
 
+			<div class="fil_instagram"
+				<?php echo do_shortcode('[instagram-feed]'); ?>
+			</div>
         </main><!-- .site-main -->
     </div><!-- .content-area -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php
