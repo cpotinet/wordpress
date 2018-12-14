@@ -92,6 +92,13 @@ get_header(); ?>
                 ?>
             </ul>
 
+			<div>
+				<?php 
+					echo '<div class="moncercle article_titre">';
+					echo '<p>Fazenda sur Instagram </p>'; 
+				?>
+			</div>
+			
 			<div class="fil_instagram">
 				<div style="display:none;">
 					<?php echo apply_filters( '', [instagram-feed] ); ?>

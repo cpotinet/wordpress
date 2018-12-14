@@ -4296,3 +4296,7 @@ p > video {
 	max-height: 5rem;
 	overflow: hidden;
 }
+
+.sb_instagram_header{
+	visibility: hidden;
+}
