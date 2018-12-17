@@ -10,7 +10,7 @@
 <h2>LES PROJETS</h2>
 <ul>
     <?php
-    $args = array( 'numberposts' => '10', 'tax_query' => array(
+    $args = array( 'numberposts' => '10000', 'tax_query' => array(
         array(
             'taxonomy' => 'post_format',
             'field' => 'slug',
