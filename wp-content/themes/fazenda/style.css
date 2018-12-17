@@ -4298,5 +4298,5 @@ p > video {
 }
 
 .sb_instagram_header{
-	visibility: hidden;
+	display:none;
 }
