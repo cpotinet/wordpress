@@ -27,6 +27,9 @@
     ) );
     $recent_posts = wp_get_recent_posts( $args );
     $i = 0;
+    $nbpages = count($recent_posts)/4;
+    $nombre = 0;
+
     foreach( $recent_posts as $recent ){
 
 
@@ -108,7 +111,11 @@
         }
 
         ?>
+
         <?php
     }
+
     ?>
 </ul>
+
+

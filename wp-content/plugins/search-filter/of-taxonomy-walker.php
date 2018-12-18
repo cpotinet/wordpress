@@ -132,9 +132,9 @@ class Taxonomy_Walker extends Walker_Category {
 					}
 				}
 			}
-			
-			$link = "<label><input type='".$this->type."' name='".$sf_name."[]' value='".$cat_id."'".$checked." /> ".$cat_name;
 
+
+			$link = "<label><input type='".$this->type."' name='".$sf_name."[]' value='".$cat_id."'".$checked." /> ".$cat_name;
 			
 			if ( !empty($show_count) )
 				$link .= ' (' . intval($category->count) . ')';
