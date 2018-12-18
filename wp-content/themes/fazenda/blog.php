@@ -8,6 +8,7 @@
  */
 ?>
 <h2>LES PROJETS</h2>
+<?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
 <ul>
     <?php
     $args = array( 'numberposts' => '10000', 'tax_query' => array(

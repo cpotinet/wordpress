@@ -20,11 +20,14 @@ get_header(); ?>
         {
             get_action( 'blog' );
         }
-		
+
+
+        if($post->ID == 106)
+        {
+            get_action( 'contact' );
+
 		?>
-		<div class="post_content">
-			<?php //echo apply_filters( 'the_content', $post->post_content ); ?>
-		</div>
+        <?php } ?>
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
 <?php get_sidebar(); ?>
