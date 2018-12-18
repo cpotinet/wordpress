@@ -76,6 +76,14 @@ git push
 Permet de rapatrier le code rajouter sur son PC en local
 git pull
 
+## 5 branch
+
+Créer une branch
+> git branch [nom_branch]
+
+accéder à cette branch
+>git checkout [nom_branch]
+
 # 3 - Régle de nommage 
 
 ## Ajout de fichier 
@@ -85,6 +93,41 @@ Lors de l'ajout d'un fichier dans le projet, on mettra l'emplacement dans la pag
 Par exemple : 
 
 >On veut rajouter un header au site au niveau de la page agence => header_agence 
+
+# 4 - BDD 
+
+## Recupération BDD
+
+Se rendre sur l'url de phpmyadmin (sa doit être localhost/phpmyadmin)
+
+selectionner la BDD que l'on récupérer, puis l'onglet exporter (créer un dump, ici fazenda)
+
+avant d'éxecuter bien vérifier dans la rubrique format que "SQL" est selectionné
+
+cliquer sur executer
+
+ca créera un fichier .sql dans le dossier de direction des telechargement car le fichier va être télécharger sur le pc(ici fazenda.sql)
+ 
+## Déploiement BDD
+
+Se rendre sur l'url de phpmyadmin (sa doit être localhost/phpmyadmin)
+
+dans l'onglet sql taper 
+>drop database [nom_BDD] (suppression de la base entier)
+
+cliquer sur nouvelle base de donnée.
+
+entrer le nom de la bdd (ici fazenda), puis cliquer sur créer.
+
+selectionner la base nouvellement créer.
+
+Dans l'onglet importer, cliquer sur parcourir (créer un dump, ici fazenda)
+
+selectionner le fichier voulu .sql notrmalement (ici de grande chance que ce soit "fazenda.sql")
+
+la base devrait apparaitre si elle n'apparait dans la liste des base de données raffrichissez la page.
+
+
 
 
 
