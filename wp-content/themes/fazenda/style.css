@@ -600,9 +600,8 @@ input[type="reset"][disabled]:focus,
 input[type="submit"],
 input[type="submit"][disabled]:hover,
 input[type="submit"][disabled]:focus {
-	background: #1a1a1a;
+	background: #4fd1ff;
 	border: 0;
-	border-radius: 2px;
 	color: #fff;
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
 	font-weight: 700;
@@ -610,6 +609,7 @@ input[type="submit"][disabled]:focus {
 	line-height: 1;
 	padding: 0.84375em 0.875em 0.78125em;
 	text-transform: uppercase;
+	height:1em;
 }
 
 button:hover,
@@ -620,7 +620,11 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-	background: #007acc;
+	background: #ffffff;
+	border: 1px solid;
+	border-color: #4fd1ff;
+	color: #4fd1ff;
+	height:1em;
 }
 
 button:focus,
@@ -3138,8 +3142,10 @@ p > video {
 	}
 
 	.site-content {
-		padding: 0px 10% 5% 6%;;
-	}
+    margin-left: auto;
+    margin-right: auto;
+    width: 80em;
+}
 
 	.content-area {
 		float: left;
@@ -4299,4 +4305,45 @@ p > video {
 
 .sb_instagram_header{
 	display:none;
+}
+
+h1{
+	text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 1.1em;
+    font-weight: 100;
+}
+
+.titre_h2 {
+	display:flex;
+}
+
+.cerclecontact {
+	padding-top: 0.5em;
+	padding-right: 1em;
+}
+
+.adresse {
+	padding-left: 1.7em;
+}
+
+.section1 {
+	display:flex;
+	justify-content: space-around;
+	margin-bottom: 4em;
+}
+
+.section2 {
+	display:flex;
+	justify-content: space-around;
+}
+
+.wpcf7-submit {
+	background-color: #4fd1ff;
 }
