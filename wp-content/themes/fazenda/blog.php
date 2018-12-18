@@ -49,6 +49,14 @@
                         echo '<div>';
                             echo $content;
                         echo '</div>';
+                        ?>
+                        <div class="article_bouton">
+                            <div class="divButtonArticle">
+                                <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
+                            </div>
+                            <?php echo ''; ?>
+                        </div>
+                        <?php
 
                     echo '</div>';
 
@@ -83,7 +91,14 @@
                             echo '<div style=" display:inline-block">';
                                 echo $content;
                             echo '</div>';
-
+                            ?>
+                            <div class="article_bouton">
+                                <div class="divButtonArticle">
+                                    <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
+                                </div>
+                                <?php echo ''; ?>
+                            </div>
+                            <?php
                         echo '</div>';
                     echo '</div>';
                 echo '</div>';

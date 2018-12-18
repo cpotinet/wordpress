@@ -546,7 +546,7 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 
 			//grab search term for prefilling search input
 			if(isset($wp_query->query['s']))
-			{//!"£$%^&*()
+			{//!"ï¿½$%^&*()
 				$this->searchterm = trim(get_search_query());
 			}
 
@@ -1121,14 +1121,14 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 							
 							if($field == "search")
 							{
-								$returnvar .=  '<li>';
-								if($labels[$i]!="")
-								{
-									$returnvar .= "<h4>".$labels[$i]."</h4>";
-								}
-								$clean_searchterm = (esc_attr($this->searchterm));
-								$returnvar .=  '<input type="text" name="'.SF_FPRE.'search" placeholder="'.$search_placeholder.'" value="'.$clean_searchterm.'">';
-								$returnvar .=  '</li>';
+								//$returnvar .=  '<li>';
+								//if($labels[$i]!="")
+								//{
+									//$returnvar .= "<h4>".$labels[$i]."</h4>";
+								//}
+								//$clean_searchterm = (esc_attr($this->searchterm));
+								//$returnvar .=  '<input type="text" name="'.SF_FPRE.'search" placeholder="'.$search_placeholder.'" value="'.$clean_searchterm.'">';
+								//$returnvar .=  '</li>';
 							}
 							else if($field == "post_types") //a post can only every have 1 type, so checkboxes & multiselects will always be "OR"
 							{//build field array
