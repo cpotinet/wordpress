@@ -8,7 +8,13 @@
  */
 ?>
 <h2>LES PROJETS</h2>
-<?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+<div class="filtre_recherche">
+	<div class="hauteurcercle">
+	<div class="moncercle"></div>
+	</div>
+	<?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+</div>
+
 <ul>
     <?php
     $args = array( 'numberposts' => '10000', 'tax_query' => array(

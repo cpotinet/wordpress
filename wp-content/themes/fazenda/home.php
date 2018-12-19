@@ -33,19 +33,20 @@ get_header(); ?>
                     $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
                     ?>
 
-                        <div class="article_entier">
+                        <div class="article_flex">
+						<div class="article_entier">
                         <div class="article_ecrit">
                             <div >
-                                <h2 >
+                                <h2>
                                     <div class="moncercle article_titre"  style="display: inline-block">
 
                                     </div>
                                     <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
                                 </h2>
                             </div>
-                                <div style="color: #4fd1ff">
+                                <h3>
                                     <?php echo $soustitre; ?>
-                                </div>
+                                </h3>
                                 <div>
                                     <?php echo $content; ?>
                                 </div>
@@ -63,6 +64,7 @@ get_header(); ?>
                         <div class="article_image">
                             <?php echo get_the_post_thumbnail( __($recent["ID"]) ); ?>
                         </div>
+						</div>
                     </div>
 
                     <?php
@@ -96,7 +98,7 @@ get_header(); ?>
                 <div style="width: 100%; display:inline-block; margin-left: 33%">
                     <div class="moncercle" style="display: inline-block"></div>
                     <div style="display: inline-block">
-                        <p>Fazenda sur Instagram </p>
+                        <h2>Fazenda sur Instagram </h2>
                     </div>
                 </div>
 
