@@ -475,15 +475,7 @@ hr {
 	margin: 0 0 1.75em;
 }
 
-ul,
-ol {
-	margin: 0 0 1.75em 1.25em;
-	padding: 0;
-}
 
-ul {
-	list-style: disc;
-}
 
 ol {
 	list-style: decimal;
@@ -505,14 +497,6 @@ dt {
 
 dd {
 	margin: 0 0 1.75em;
-}
-
-img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-	vertical-align: middle;
 }
 
 del {
@@ -751,7 +735,7 @@ input[type="search"].search-field {
  */
 
 a {
-	color: #007acc;
+	color: #1a1a1a;
 	text-decoration: none;
 }
 
@@ -4276,9 +4260,6 @@ p > video {
 	height:12px;
 }
 
-.tab_article{
-	display: inline-flex;
-}
 .article_entier{
 	display: inline-block;
 	width: 25em;
@@ -4292,11 +4273,6 @@ p > video {
 	padding-left: 92%;
 }
 
-.article_image{
-	display: inline-block;
-	width: 48em;
-	height: 100%;
-}
 
 .article_lien{
 	color: #1f1f1f;
@@ -4381,20 +4357,11 @@ input, textarea {
 }
 
 .contenu_philosophie {
-	width : 25em;
+	width : 30em;
 }
 
 .contenu_equipe {
-	width : 45em;
-}
-
-.filtre_recherche {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.hauteurcercle {
-	margin-top: 0.4em;
+	width : 43em;
 }
 
 .postform {
@@ -4404,4 +4371,72 @@ input, textarea {
 .article_flex {
 	display: flex;
 	justify-content: space-between;
+}
+
+.titre_projets {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filtre_recherche {
+	display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hauteurcercle {
+	padding-top: 0.4em;
+	padding-right: 1em;
+}
+
+.contenu_projet {
+	width: 35em;
+}
+
+.titreinsta {
+		margin-left: 36.5em;
+	}
+
+@media screen and (max-width:768px) {
+	.content-area {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.article_flex {
+		flex-wrap: wrap;
+	}
+	.article_ecrit {
+		width: 43.8em;
+		padding-bottom: 1em;
+	}
+	.titreinsta {
+		margin-left: 0em;
+	}
+	
+	.section1{
+		flex-wrap: wrap;
+	}
+	
+	.section2{
+		flex-wrap: wrap;
+	}
+	
+	.contenu_philosophie {
+		width: 43.8em;
+	}
+	
+	.contenu_equipe {
+		width: 43.8em;
+	}
+	
+	.image_contact2 {
+		display: none;
+	}
+}
+	
+@media screen and (max-width:568px) {
+	
 }

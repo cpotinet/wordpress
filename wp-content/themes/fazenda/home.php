@@ -4,7 +4,7 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-            <div>
+
             <ul class="tab_article" >
                 <?php
                 //récupération article récents (numbersposts => 1
@@ -34,38 +34,37 @@ get_header(); ?>
                     ?>
 
                         <div class="article_flex">
-						<div class="article_entier">
-                        <div class="article_ecrit">
-                            <div >
-                                <h2>
-                                    <div class="moncercle article_titre"  style="display: inline-block">
+							<div class="article_entier">
+							<div class="article_ecrit">
+								<div >
+									<h2>
+										<div class="moncercle article_titre"  style="display: inline-block">
 
-                                    </div>
-                                    <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
-                                </h2>
-                            </div>
-                                <h3>
-                                    <?php echo $soustitre; ?>
-                                </h3>
-                                <div>
-                                    <?php echo $content; ?>
-                                </div>
+										</div>
+										<?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
+									</h2>
+								</div>
+									<h3>
+										<?php echo $soustitre; ?>
+									</h3>
+									<div>
+										<?php echo $content; ?>
+									</div>
 
 
 
-                                <div class="article_bouton">
-                                    <div class="divButtonArticle">
-                                        <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
-                                    </div>
-                                    <?php echo ''; ?>
-                                </div>
-                            </div>
+									<div class="article_bouton">
+										<div class="divButtonArticle">
+											<?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
+										</div>
+										<?php echo ''; ?>
+									</div>
+							</div>
                         </div>
                         <div class="article_image">
                             <?php echo get_the_post_thumbnail( __($recent["ID"]) ); ?>
                         </div>
-						</div>
-                    </div>
+					</div>
 
                     <?php
                     /*
@@ -95,7 +94,7 @@ get_header(); ?>
             </ul>
 
             <div>
-                <div style="width: 100%; display:inline-block; margin-left: 33%">
+                <div class="titreinsta"; style="width: 100%; display:inline-block;">
                     <div class="moncercle" style="display: inline-block"></div>
                     <div style="display: inline-block">
                         <h2>Fazenda sur Instagram </h2>
@@ -111,4 +110,3 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php
