@@ -4440,3 +4440,24 @@ input, textarea {
 @media screen and (max-width:568px) {
 	
 }
+
+.parentBouton_retour_blog
+{
+	display:flex;
+	background-color: #4fd1ff;
+	width: auto;
+	margin-left: 80%;
+}
+
+.enfantBouton_retour_blog{
+	width: 100%;
+}
+
+.abouton_retour_blog
+{
+	width: 100%;
+	color: white;
+	margin: 10%;
+}
+
+

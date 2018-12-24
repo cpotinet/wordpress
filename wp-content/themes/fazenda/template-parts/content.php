@@ -26,5 +26,6 @@
         $content = str_replace( $img2, '', $content);
         //var_dump($content);
         ?>
+
     </article><!-- #post-## -->
 </article><!-- #post-## -->
