@@ -28,7 +28,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
         <?php global $post; $post_slug=$post->post_name;
-        if($post_slug == 'accueil')
+        if(is_home())
         {
             echo do_shortcode('[metaslider id="135"]');
         }
@@ -45,10 +45,9 @@
                 }
                 else
                 {
-                    echo do_shortcode('[metaslider id="135"]');
+                    echo do_shortcode('[metaslider id="195"]');
                 }
             }
-
         }
 
 
