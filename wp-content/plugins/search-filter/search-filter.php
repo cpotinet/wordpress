@@ -1172,7 +1172,7 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 							$returnvar .= "<input type=\"hidden\" name=\"".SF_FPRE."empty_search_url\" value=\"".esc_url($empty_search_url)."\" />";
 						}
 						
-						
+
 						$returnvar .=
 							'<input type="hidden" name="'.SF_FPRE.'submitted" value="1">
 							<input type="submit" value="'.$submitlabel.'">
