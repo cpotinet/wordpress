@@ -33,37 +33,38 @@ get_header(); ?>
                     $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
                     ?>
 
-                        <div class="article_entier">
-                        <div class="article_ecrit">
-                            <div >
-                                <h2 >
-                                    <div class="moncercle article_titre"  style="display: inline-block">
+                        <div class="article_flex">
+							<div class="article_entier">
+							<div class="article_ecrit">
+								<div >
+									<h2>
+										<div class="moncercle article_titre"  style="display: inline-block">
 
-                                    </div>
-                                    <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
-                                </h2>
-                            </div>
-                                <div style="color: #4fd1ff">
-                                    <?php echo $soustitre; ?>
-                                </div>
-                                <div>
-                                    <?php echo $content; ?>
-                                </div>
+										</div>
+										<?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
+									</h2>
+								</div>
+									<h3>
+										<?php echo $soustitre; ?>
+									</h3>
+									<div>
+										<?php echo $content; ?>
+									</div>
 
 
 
-                                <div class="article_bouton">
-                                    <div class="divButtonArticle">
-                                        <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
-                                    </div>
-                                    <?php echo ''; ?>
-                                </div>
-                            </div>
+									<div class="article_bouton">
+										<div class="divButtonArticle">
+											<?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
+										</div>
+										<?php echo ''; ?>
+									</div>
+							</div>
                         </div>
                         <div class="article_image">
                             <?php echo get_the_post_thumbnail( __($recent["ID"]) ); ?>
                         </div>
-                    </div>
+					</div>
 
                     <?php
                     /*
@@ -92,9 +93,20 @@ get_header(); ?>
                 ?>
             </ul>
 
+            <div>
+                <div class="titreinsta"; style="width: 100%; display:inline-block;">
+                    <div class="moncercle" style="display: inline-block"></div>
+                    <div style="display: inline-block">
+                        <h2>Fazenda sur Instagram </h2>
+                    </div>
+                </div>
+
+                <div class="fil_instagram">
+                    <?php echo do_shortcode('[instagram-feed]'); ?>
+                </div>
+            </div>
         </main><!-- .site-main -->
     </div><!-- .content-area -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-<?php

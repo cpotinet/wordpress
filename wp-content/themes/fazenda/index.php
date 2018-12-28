@@ -36,11 +36,11 @@ get_header(); ?>
                         'operator' => 'NOT IN'
                     )
                 ) );
-                $recent_posts = wp_get_recent_posts( $args );
+                /*$recent_posts = wp_get_recent_posts( $args );
                 foreach( $recent_posts as $recent ){
                     echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a> </li> ';
                 }
-                wp_reset_query();
+                wp_reset_query();*/
                 ?>
             </ul>
 

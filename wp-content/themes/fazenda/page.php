@@ -20,9 +20,22 @@ get_header(); ?>
         {
             get_action( 'blog' );
         }
-        ?>
+
+
+        if($post->ID == 106) {
+            get_action('contact');
+        }
+        if($post->ID == 3) {
+            get_action('mentions_legales');
+
+        }
+        if($post->ID == 2) {
+            get_action('agence');
+
+
+		?>
+        <?php } ?>
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

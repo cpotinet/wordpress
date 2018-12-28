@@ -10,7 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="width: 99%">
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
     <?php
@@ -71,10 +71,19 @@
     echo '</div>';
     echo '<div style="height:100%; width:100%">';
     echo do_shortcode($diapo2);
-    echo '</div>';
+
 
     //echo $content;
     ?>
 
 
+
+    <?php echo '</div>'; ?>
+
+
 </article><!-- #post-## -->
+<div class="parentBouton_retour_blog">
+    <div class="enfantBouton_retour_blog">
+        <?php echo '<a href="' . "'/wordpress/blog/'" . '" class="abouton_retour_blog">retour à la liste des articles</a>  ';?>
+    </div>
+</div>
