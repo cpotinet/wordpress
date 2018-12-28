@@ -7,8 +7,16 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-<h2>LES PROJETS</h2>
-<?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+<div class="titre_projets">
+	<h1>LES PROJETS</h1>
+	<div class="filtre_recherche">
+		<div class="hauteurcercle">
+		<div class="moncercle"></div>
+		</div>
+		<?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+	</div>
+</div>
+
 <ul>
     <?php
     $args = array( 'numberposts' => '10000', 'tax_query' => array(
@@ -27,24 +35,31 @@
     ) );
     $recent_posts = wp_get_recent_posts( $args );
     $i = 0;
+    $nbpages = count($recent_posts)/4;
+    $nombre = 0;
+
     foreach( $recent_posts as $recent ){
 
 
         if ($i%2 == 0)
         {
-            $soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_excerpt"]), '</h2>');
+			$soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_excerpt"]), '</h2>');
             $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
-            echo '<li style="display: inline; width: 45%;">';
-                echo '<div style="margin-bottom: 2%; display: flex;">';
+            echo '<li style="display: inline;">';
+                echo '<div style="margin-bottom: 2%; display: flex; justify-content: space-between;">';
 
-                    echo '<div style="width:45%; display:inline-block">';
-                        echo '<div>';
-                            echo '<a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>  ';
-                        echo '</div>';
+                    echo '<div class="contenu_philosophie"; >';
+                        echo '<div class="titre_h2">';
+							echo '<div class="cerclecontact">';
+							echo '<div class="moncercle">';
+							echo '</div>';
+							echo '</div>';
+                            echo '<h2><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a></h2>  ';
+                       echo '</div>';
 
-                        echo '<div>';
+                        echo '<h3>';
                             echo $soustitre;
-                        echo '</div>';
+                        echo '</h3>';
 
                         echo '<div>';
                             echo $content;
@@ -56,11 +71,13 @@
                             </div>
                             <?php echo ''; ?>
                         </div>
+						
+					
                         <?php
 
                     echo '</div>';
 
-                    echo '<div style="width:40%; display: inline-block">';
+                    echo '<div>';
                         echo get_the_post_thumbnail( __($recent["ID"]) );
                     echo '</div>';
 
@@ -72,16 +89,19 @@
         {
             $soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_excerpt"]), '</h2>');
             $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
-            echo '<li style="display: inline; width: 45%;">';
-                echo '<div style="margin-bottom: 2%; display: flex;">';
-                    echo '<div style="width: 84%; display: inline-flex;">';
+            echo '<li style="display: inline;">';
+                echo '<div style="margin-bottom: 2%; display: flex; justify-content: space-between;">';
+                    echo '<div style="display: inline-flex;">';
                         echo get_the_post_thumbnail( __($recent["ID"]) );
-                    echo '</div>';
 
-                    echo '<div style="display: inline-flex; margin-left: 2%; width: 100%;">';
+                    echo '<div class="contenu_projet"; style="display: inline-flex; margin-left: 10%;">';
                         echo '<div >';
-                            echo '<div>';
-                                echo '<a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>  ';
+                           echo '<div class="titre_h2">';
+								echo '<div class="cerclecontact">';
+								echo '<div class="moncercle">';
+								echo '</div>';
+								echo '</div>';
+                                echo '<h2><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a></h2>  ';
                             echo '</div>';
 
                             echo '<div>';
@@ -107,8 +127,13 @@
             $i = $i+1;
         }
 
+
         ?>
+
         <?php
     }
+
     ?>
 </ul>
+
+

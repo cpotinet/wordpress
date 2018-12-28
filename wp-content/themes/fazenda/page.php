@@ -22,9 +22,16 @@ get_header(); ?>
         }
 
 
-        if($post->ID == 106)
-        {
-            get_action( 'contact' );
+        if($post->ID == 106) {
+            get_action('contact');
+        }
+        if($post->ID == 3) {
+            get_action('mentions_legales');
+
+        }
+        if($post->ID == 2) {
+            get_action('agence');
+
 
 		?>
         <?php } ?>

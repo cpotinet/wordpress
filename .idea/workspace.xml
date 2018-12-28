@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bbd53047-c102-435f-a595-6d10682d78c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/search-filter/search-filter.php" afterPath="$PROJECT_DIR$/wp-content/plugins/search-filter/search-filter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,10 +17,23 @@
       <file leaf-file-name="blog.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/blog.php">
           <provider selected="true" editor-type-id="text-editor">
+
             <state relative-caret-position="-7">
               <caret line="96" column="84" lean-forward="false" selection-start-line="96" selection-start-column="84" selection-end-line="96" selection-end-column="84" />
               <folding>
                 <element signature="e#6#168#0#PHP" expanded="true" />
+
+            <state relative-caret-position="333">
+              <caret line="116" column="84" lean-forward="true" selection-start-line="116" selection-start-column="84" selection-end-line="116" selection-end-column="86" />
+              <folding>
+                <element signature="e#6#168#0#PHP" expanded="true" />
+                <marker date="1545667707749" expanded="true" signature="1271:1287" ph="..." />
+                <marker date="1545667707749" expanded="true" signature="1326:1391" ph="..." />
+                <marker date="1545667707749" expanded="true" signature="2988:3004" ph="..." />
+                <marker date="1545667707749" expanded="true" signature="3043:3108" ph="..." />
+                <marker date="1545667707749" expanded="true" signature="3151:3172" ph="..." />
+                <marker date="1545667707749" expanded="true" signature="3314:3353" ph="..." />
+                <marker date="1545667707749" expanded="true" signature="3949:3970" ph="..." />
               </folding>
             </state>
           </provider>
@@ -29,17 +43,39 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/template-parts/content-single.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
+
               <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
+
+              <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="40" />
+              <folding>
+                <marker date="1545669313847" expanded="true" signature="1575:1598" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="1676:1717" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="1836:1898" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="2007:2035" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="2078:2107" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="2238:2267" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="2422:2458" ph="..." />
+                <marker date="1545669313847" expanded="true" signature="2585:2608" ph="..." />
+              </folding>
+
             </state>
           </provider>
         </entry>
       </file>
+
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="422">
               <caret line="4301" column="1" lean-forward="false" selection-start-line="4301" selection-start-column="1" selection-end-line="4301" selection-end-column="1" />
+
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="4467" column="0" lean-forward="true" selection-start-line="4467" selection-start-column="0" selection-end-line="4467" selection-end-column="0" />
+
               <folding />
             </state>
           </provider>
@@ -172,13 +208,19 @@
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/template-parts/content-category2.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/header_agence.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fazenda/header.php" />
+
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/blog.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/template-parts/content.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/template-parts/content-single.php" />
+
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/fazenda/header.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/search-filter/search-filter.php" />
+
+        <option value="$PROJECT_DIR$/wp-content/plugins/search-filter/search-filter.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/fazenda/style.css" />
       </list>
     </option>
   </component>
@@ -267,6 +309,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="last_opened_file_path" value="C:/devPerso/Perso/ecommerce" />
+
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -316,6 +359,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -343,7 +387,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1545154646698" expanded="true" signature="1216:1244" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="1275:1308" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="1340:1371" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="1963:1995" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="2739:2762" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="2808:2849" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="2969:2992" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -359,7 +411,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding />
+          <folding>
+            <marker date="1545154646685" expanded="true" signature="1216:1244" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1275:1308" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1339:1372" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1485:1536" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1813:1834" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -392,6 +450,14 @@
           <caret line="118" column="5" lean-forward="false" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
           <folding>
             <element signature="e#6#168#0#PHP" expanded="true" />
+            <marker date="1545667707749" expanded="true" signature="1271:1287" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="1326:1391" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="2988:3004" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3043:3108" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3151:3172" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3314:3353" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3949:3970" ph="..." />
+
           </folding>
         </state>
       </provider>
@@ -416,12 +482,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="19" column="69" lean-forward="true" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+
           <folding>
             <marker date="1545988002426" expanded="true" signature="1675:1697" ph="..." />
             <marker date="1545988002426" expanded="true" signature="1896:1950" ph="..." />
             <marker date="1545988002426" expanded="true" signature="2088:2135" ph="..." />
             <marker date="1545988002426" expanded="true" signature="2246:2417" ph="..." />
           </folding>
+
         </state>
       </provider>
     </entry>
@@ -437,6 +505,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+
           <folding>
             <marker date="1545988073373" expanded="true" signature="755:771" ph="..." />
             <marker date="1545988073373" expanded="true" signature="779:794" ph="..." />
@@ -556,7 +625,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+
           <folding />
+
+          <folding>
+            <marker date="1545154646685" expanded="true" signature="1216:1244" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1275:1308" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1339:1372" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1485:1536" ph="..." />
+            <marker date="1545154646685" expanded="true" signature="1813:1834" ph="..." />
+          </folding>
+
         </state>
       </provider>
     </entry>
@@ -564,7 +643,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+
           <folding />
+
+          <folding>
+            <marker date="1545154646698" expanded="true" signature="1216:1244" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="1275:1308" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="1340:1371" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="1963:1995" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="2739:2762" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="2808:2849" ph="..." />
+            <marker date="1545154646698" expanded="true" signature="2969:2992" ph="..." />
+          </folding>
+
         </state>
       </provider>
     </entry>
@@ -592,6 +683,16 @@
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="69" lean-forward="false" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+
     <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7514">
@@ -602,29 +703,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/page.php">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="306">
           <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding>
             <marker date="1545988073373" expanded="true" signature="755:771" ph="..." />
             <marker date="1545988073373" expanded="true" signature="779:794" ph="..." />
           </folding>
+
+        <state relative-caret-position="425">
+          <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding />
+
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/template-parts/content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
+
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/blog.php">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="-7">
           <caret line="96" column="84" lean-forward="false" selection-start-line="96" selection-start-column="84" selection-end-line="96" selection-end-column="84" />
           <folding>
+
+        <state relative-caret-position="333">
+          <caret line="116" column="84" lean-forward="true" selection-start-line="116" selection-start-column="84" selection-end-line="116" selection-end-column="86" />
+          <folding>
             <element signature="e#6#168#0#PHP" expanded="true" />
+            <marker date="1545667707749" expanded="true" signature="1271:1287" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="1326:1391" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="2988:3004" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3043:3108" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3151:3172" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3314:3353" ph="..." />
+            <marker date="1545667707749" expanded="true" signature="3949:3970" ph="..." />
+
           </folding>
         </state>
       </provider>
@@ -654,14 +778,42 @@
             <marker date="1545988002426" expanded="true" signature="1896:1950" ph="..." />
             <marker date="1545988002426" expanded="true" signature="2088:2135" ph="..." />
             <marker date="1545988002426" expanded="true" signature="2246:2417" ph="..." />
+          <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="40" />
+          <folding>
+            <marker date="1545669313847" expanded="true" signature="1575:1598" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="1676:1717" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="1836:1898" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="2007:2035" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="2078:2107" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="2238:2267" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="2422:2458" ph="..." />
+            <marker date="1545669313847" expanded="true" signature="2585:2608" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/search-filter/search-filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="1177" column="56" lean-forward="false" selection-start-line="1177" selection-start-column="56" selection-end-line="1177" selection-end-column="69" />
+          <folding>
+            <marker date="1545670874379" expanded="true" signature="37812:37883" ph="..." />
+            <marker date="1545670874379" expanded="true" signature="38390:38417" ph="..." />
+            <marker date="1545670874379" expanded="true" signature="40333:40395" ph="..." />
+            <marker date="1545670874379" expanded="true" signature="41221:41270" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/fazenda/style.css">
       <provider selected="true" editor-type-id="text-editor">
+
         <state relative-caret-position="422">
           <caret line="4301" column="1" lean-forward="false" selection-start-line="4301" selection-start-column="1" selection-end-line="4301" selection-end-column="1" />
+
+        <state relative-caret-position="765">
+          <caret line="4467" column="0" lean-forward="true" selection-start-line="4467" selection-start-column="0" selection-end-line="4467" selection-end-column="0" />
+
           <folding />
         </state>
       </provider>
@@ -679,5 +831,6 @@
         </state>
       </provider>
     </entry>
+
   </component>
 </project>
