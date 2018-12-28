@@ -55,7 +55,7 @@
 							echo '</div>';
 							echo '</div>';
                             echo '<h2><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a></h2>  ';
-                       echo '</div>';
+                            echo '</div>';
 
                         echo '<h3>';
                             echo $soustitre;
@@ -78,7 +78,7 @@
                     echo '</div>';
 
                     echo '<div>';
-                        echo get_the_post_thumbnail( __($recent["ID"]) );
+            echo get_the_post_thumbnail( __($recent["ID"]),'large', array( 'class' => 'jesuisbibi' ) );
                     echo '</div>';
 
                 echo '</div>';
@@ -92,7 +92,9 @@
             echo '<li style="display: inline;">';
                 echo '<div style="margin-bottom: 2%; display: flex; justify-content: space-between;">';
                     echo '<div style="display: inline-flex;">';
-                        echo get_the_post_thumbnail( __($recent["ID"]) );
+                        echo '<div style="width: 50%;height: 100%;">';
+                            echo get_the_post_thumbnail( __($recent["ID"]),'large', array( 'class' => 'jesuisbibi2' ) );
+                        echo '</div>';
 
                     echo '<div class="contenu_projet"; style="display: inline-flex; margin-left: 10%;">';
                         echo '<div >';
