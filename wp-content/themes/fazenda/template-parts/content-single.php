@@ -53,17 +53,19 @@
                     echo $explode[0];
                 echo '</div>';
 
-                echo '<div style="display: inline; width: 100%">';
-                    echo '<div style="display: inline ; width: 100%">';
-                    echo  '<img ' . $img1.'</img>' ;
-                    echo '</div>';
-                    echo '<div style="display: inline ; width: 100%">';
-                    echo '<img ' . $img2.'</img>' ;
+                echo '<div style="width: 100%">';
+                    echo '<div style="width: 100%;display: inline;">';
+                        echo '<div style="display: inline-block; padding-left: 9%;">';
+                        echo  '<img ' . $img1.'</img>' ;
+                        echo '</div>';
+                        echo '<div style="display: inline-block; padding-left: 5%;">';
+                        echo '<img ' . $img2.'</img>' ;
+                        echo '</div>';
                     echo '</div>';
                 echo '</div>';
 
 
-            echo '<div style="padding-top: 10%;padding-bottom: 2%;">';
+            echo '<div style="padding-bottom: 2%;">';
             echo $explode[1];
             echo '</div>';
         echo '</div>';
