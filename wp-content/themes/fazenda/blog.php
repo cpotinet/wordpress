@@ -45,8 +45,8 @@
         {
 			$soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_excerpt"]), '</h2>');
             $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
-            echo '<li style="display: inline;">';
-                echo '<div style="margin-bottom: 2%; display: flex; justify-content: space-between;">';
+            echo '<li style="" class="li_article">';
+                echo '<div style="" class="dim_article taille_article">';
 
                     echo '<div class="contenu_philosophie"; >';
                         echo '<div class="titre_h2">';
@@ -91,16 +91,16 @@
         {
             $soustitre = chope_string_entre_deux_delimiteur('<h2>',  __($recent["post_excerpt"]), '</h2>');
             $content = str_replace( $soustitre, '', $recent["post_excerpt"]);
-            echo '<li style="display: inline;">';
-                echo '<div style="margin-bottom: 2%; display: flex; justify-content: space-between;">';
-                    echo '<div style="display: inline-flex;">';
-                        echo '<div style="width: 50%;height: 100%;">';
+            echo '<li style="display: inline;" class="li_article_2">';
+                echo '<div style="margin-bottom: 2%; display: flex" class="dim_article_2 taille_article_2" >';
+                    echo '<div style="" class="position_article_2">';
+                        echo '<div class="xxxxxxxxx">';
                             echo get_the_post_thumbnail( __($recent["ID"]),'large', array( 'class' => 'jesuisbibi2' ) );
                         echo '</div>';
 
-                    echo '<div class="contenu_projet"; style="display: inline-flex; margin-left: 10%;">';
+                    echo '<div class="contenu_projet titre_2" style="">';
                         echo '<div >';
-                           echo '<div class="titre_h2">';
+                           echo '<div class="titre_h2_2">';
 								echo '<div class="cerclecontact">';
 								echo '<div class="moncercle">';
 								echo '</div>';
@@ -118,7 +118,7 @@
                                 echo $content;
                             echo '</div>';
                             ?>
-                            <div class="article_bouton">
+                            <div class="article_bouton_2">
                                 <div class="divButtonArticle">
                                     <?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="aButtonArticle" >+</a>  '; ?>
                                 </div>
