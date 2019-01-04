@@ -54,7 +54,9 @@
 							echo '<div class="moncercle">';
 							echo '</div>';
 							echo '</div>';
-                            echo '<h2><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a></h2>  ';
+                            echo '<h2 class="titleArticle">
+                                    <a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>
+                                </h2>  ';
                             echo '</div>';
 
                         echo '<h3>';
@@ -103,7 +105,9 @@
 								echo '<div class="moncercle">';
 								echo '</div>';
 								echo '</div>';
-                                echo '<h2><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a></h2>  ';
+                                echo '<h2 class="titleArticle">
+                                            <a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a>
+                                      </h2>  ';
                             echo '</div>';
 
                             echo '<div>';
