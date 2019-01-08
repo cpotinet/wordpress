@@ -58,24 +58,36 @@
             <a class='linkdin' href='/wordpress/'><span></span></a>
         </div>
 
-		<header id="masthead" class="site-header mainNavMenu" role="banner">
+		<header id="masthead" class="site-header mainNavMenu " role="banner">
             <?php
                 if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
-                <div id="secondary" class="secondary">
+                <div id="secondary" class="secondary position_burger">
 
                     <?php if ( has_nav_menu( 'primary' ) ) : ?>
-                        <nav id="site-navigation" class="main-navigation" role="navigation">
-                            <?php
-                            // Primary navigation menu.
-                            wp_nav_menu( array(
-                                'menu_class'     => 'nav-menu',
-                                'theme_location' => 'primary',
-                            ) );
-                            ?>
-                        </nav><!-- .main-navigation -->
+
+
+                        <nav id="site-navigation " role="navigation" >
+                            <form for="toggle" class="menu-position"></form>
+                            <input type="checkbox" name="toggle" value="toggle" id="toggle">
+                            <div class="burger">
+                                <div class="icon">
+                                </div>
+                            </div>
+                            <ul class="menu">
+                                <?php
+                                // Primary navigation menu.
+                                wp_nav_menu( array(
+                                    'menu_class'     => 'nav-menu',
+                                    'theme_location' => 'primary',
+                                ) );
+                                ?>
+                            </ul>
+                        </nav>
                     <?php endif; ?>
                 </div><!-- .secondary -->
             <?php endif; ?>
 		</header><!-- .site-header -->
+
+
 
 		<div id="content" class="site-content">

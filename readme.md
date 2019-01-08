@@ -84,6 +84,14 @@ Créer une branch
 accéder à cette branch
 >git checkout [nom_branch]
 
+Commit sur la nouvelle branch, ne pas oublier de créer la MR 
+LE terminal envoi un mesage " Create a pull request for [nom_branch] on GitHub by visiting:"
+
+copier l'url donné en dessous
+rentrer l'url dans le navigateur 
+puis créer la premiére merge. (faire ceci une fois aprés tous les commit seront affiché directement )
+>git checkout [nom_branch]
+
 # 3 - Régle de nommage 
 
 ## Ajout de fichier 
