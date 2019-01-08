@@ -17,7 +17,7 @@
 	</div>
 </div>
 
-<ul>
+<ul class="position_blog">
     <?php
     $args = array( 'numberposts' => '10000', 'tax_query' => array(
         array(
