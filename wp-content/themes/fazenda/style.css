@@ -1397,6 +1397,46 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*#endregion*/
 
 /*#region Commun*/
+.subtitle-list-style {
+	position: relative;
+	left:1rem;
+	float: right;
+}
+
+.subtitle-list-style-single {
+	position: relative;
+	float: right;
+}
+
+.subtitle-list-style-single::before{
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: -1rem;
+	background: #4fd1ff;
+	display:block;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+}
+
+.single-article-img-container{
+	width: 100%;
+	display: flex;
+}
+
+.subtitle-list-style::before{
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: -1rem;
+	background: #4fd1ff;
+	display:block;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+}
+
 article,
 aside,
 details,
@@ -2535,7 +2575,7 @@ a:active {
 
 .alignleft {
 	float: left;
-	margin: 0.375em 1.75em 1.75em 0;
+	margin: 0 1.75em 1.75em 0;
 }
 
 .alignright {
@@ -4391,9 +4431,8 @@ input, textarea {
 	.parentBouton_retour_blog
 	{
 		display:flex;
-		background-color: #4fd1ff;
 		width: auto;
-		margin-left: 80%;
+		/*margin-left: 80%;*/
 	}
 
 	.li_article {
@@ -4425,8 +4464,8 @@ input, textarea {
 	.abouton_retour_blog
 	{
 		width: 100%;
-		color: white;
-		margin: 10%;
+		color: black;
+		/*margin: 10%;*/
 	}
 
 	.site-content {
@@ -5164,13 +5203,6 @@ input[type="checkbox"]:checked ~ .burger .icon {
 	.site-header {
 		padding: 2.625em 7.6923%;
 	}
-	.parentBouton_retour_blog
-	{
-		display:flex;
-		background-color: #4fd1ff;
-		width: auto;
-		margin-left: 80%;
-	}
 
 	.titre_h2 {
 		display: flex;
@@ -5396,3 +5428,157 @@ input[type="checkbox"]:checked ~ .burger .icon {
 /*#endregion 460px et -*/
 
 /*#endregion*/
+
+/*#region 1024px_application*/
+
+@media only screen and (max-width:1024px) {
+	.subtitle-list-style-single {
+		position: relative;
+		float: right;
+	}
+
+	.subtitle-list-style-single::before{
+		content: "";
+		position: absolute;
+		top: 25%;
+		left: -1rem;
+		background: #4fd1ff;
+		display:block;
+		border-radius: 50%;
+		width: 12px;
+		height: 12px;
+	}
+
+	.enfantBouton_retour_blog {
+		width: 100%;
+	}
+
+	.parentBouton_retour_blog {
+		display: flex;
+		width: auto;
+		background-color: white;
+		margin-left: 0;
+	}
+
+	.abouton_retour_blog {
+		width: 100%;
+		color: black;
+		margin: 0;
+	}
+
+	.single-article-img-container {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/*endregion*/
+
+/*#region 768px_application*/
+
+@media only screen and (max-width:768px) {
+	.subtitle-list-style-single {
+		position: relative;
+		float: right;
+	}
+
+	.subtitle-list-style-single::before{
+		content: "";
+		position: absolute;
+		top: 25%;
+		left: -1rem;
+		background: #4fd1ff;
+		display:block;
+		border-radius: 50%;
+		width: 12px;
+		height: 12px;
+	}
+
+	.enfantBouton_retour_blog {
+		width: 100%;
+	}
+
+	.parentBouton_retour_blog {
+		display: flex;
+		width: auto;
+		background-color: white;
+		margin-left: 0;
+	}
+
+	.abouton_retour_blog {
+		width: 100%;
+		color: black;
+		margin: 0;
+	}
+
+	.single-article-img-container {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/*endregion*/
+
+/*#region 480px_application*/
+@media only screen and (max-width:480px) {
+
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin: 0 auto 1.75em;
+		width: 18rem;
+	}
+
+	.alignleft {
+		clear: both;
+		display: block;
+		width: 18rem;
+	}
+
+	.subtitle-list-style-single {
+		position: relative;
+		float: right;
+	}
+
+	.subtitle-list-style-single::before{
+		content: "";
+		position: absolute;
+		top: 25%;
+		left: -1rem;
+		background: #4fd1ff;
+		display:block;
+		border-radius: 50%;
+		width: 12px;
+		height: 12px;
+	}
+
+	.enfantBouton_retour_blog {
+		width: 100%;
+	}
+
+	.parentBouton_retour_blog {
+		display: flex;
+		width: auto;
+		background-color: white;
+		margin-left: 0;
+	}
+
+	.abouton_retour_blog {
+		width: 100%;
+		color: black;
+		margin: 0;
+	}
+
+	.single-article-img-container {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+/*endregion*/

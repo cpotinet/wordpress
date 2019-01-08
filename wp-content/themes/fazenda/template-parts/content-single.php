@@ -9,9 +9,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="width: 99%">
-	<header class="entry-header">
-		<?php the_title( '<h1 class="">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<header class="">
+        <?php the_title( '<h2>', '</h2>' );?>
+
+    </header><!-- .entry-header -->
+
+    <div class="parentBouton_retour_blog">
+        <div class="enfantBouton_retour_blog">
+            <?php echo '<div class="subtitle-list-style-single">
+                <a href="' . "'/wordpress/blog/'" . '" class="abouton_retour_blog">retour à la liste des articles</a>  ';?>
+        </div>
+    </div>
+    </div>
 
     <?php
     $post = get_post();
@@ -49,16 +58,16 @@
     echo '</div>';
     echo '<div>';
         echo '<div>';
-                echo '<div style="width: 100%; height: 100%; padding-top: 2%;padding-bottom: 2%;">';
+                echo '<div style="padding-bottom: 1rem;">';
                     echo $explode[0];
                 echo '</div>';
 
-                echo '<div style="width: 100%">';
-                    echo '<div style="width: 100%;display: inline;">';
-                        echo '<div style="display: inline-block; padding-left: 9%;">';
+                echo '<div>';
+                    echo '<div class="single-article-img-container">';
+                        echo '<div>';
                         echo  '<img ' . $img1.'</img>' ;
                         echo '</div>';
-                        echo '<div style="display: inline-block; padding-left: 5%;">';
+                        echo '<div style="display: inline-block; padding-left: 2rem;">';
                         echo '<img ' . $img2.'</img>' ;
                         echo '</div>';
                     echo '</div>';
@@ -77,15 +86,5 @@
 
     //echo $content;
     ?>
-
-
-
     <?php echo '</div>'; ?>
-
-
 </article><!-- #post-## -->
-<div class="parentBouton_retour_blog">
-    <div class="enfantBouton_retour_blog">
-        <?php echo '<a href="' . "'/wordpress/blog/'" . '" class="abouton_retour_blog">retour à la liste des articles</a>  ';?>
-    </div>
-</div>
