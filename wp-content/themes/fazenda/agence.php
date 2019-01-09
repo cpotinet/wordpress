@@ -17,10 +17,6 @@ get_header(); global $post; $post_slug=$post->post_name;
 
 				<div>
 					<div class="titre_h2">
-						<div class="cerclecontact">
-							<div  class="moncercle">
-							</div>
-						</div>
 
 						<h2>la philosophie</h2>
 					</div>
@@ -42,11 +38,7 @@ get_header(); global $post; $post_slug=$post->post_name;
 			</div>
 
 			<div>
-				<div class="titre_h2">	
-					<div class="cerclecontact">
-						<div  class="moncercle">
-					</div>
-					</div>
+				<div class="titre_h2">
 					<h2>l'équipe</h2>
 				</div>		
 
