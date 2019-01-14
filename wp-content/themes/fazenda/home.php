@@ -38,7 +38,7 @@ get_header(); ?>
 							<div class="article_ecrit">
 								<div >
 									<h2>
-										<div class="moncercle article_titre"  style="display: inline-block">
+										<div class="article_titre"  style="display: inline-block">
 
 										</div>
 										<?php echo '<a href="' . get_permalink($recent["ID"]) . '" class="article_lien" >' .   ( __($recent["post_title"])).'</a>  '; ?>
@@ -95,7 +95,6 @@ get_header(); ?>
 
             <div>
                 <div class="titreinsta"; style="width: 100%; display:inline-block;">
-                    <div class="moncercle" style="display: inline-block"></div>
                     <div style="display: inline-block">
                         <h2>Fazenda sur Instagram </h2>
                     </div>

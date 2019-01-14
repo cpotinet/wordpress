@@ -11,7 +11,7 @@
 	<h1>LES PROJETS</h1>
 	<div class="filtre_recherche">
 		<div class="hauteurcercle">
-		<div class="moncercle"></div>
+		<div class="moncercle responsivecercle"></div>
 		</div>
 		<?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
 	</div>

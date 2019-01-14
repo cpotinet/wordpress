@@ -8,44 +8,38 @@ get_header(); global $post; $post_slug=$post->post_name;
     
 		
 
-	<div class="section1">
-		<div class="">
+	<div class="">
+		<div class="li_article">
 			<div class="post_title">	
 				<h1 class="post_title">
 					<?php  echo $post->post_title; ?>
 				</h1>
 			</div>
 
-			<div>
-				<div class="titre_h2">
-					<div class="cerclecontact">
-						<div  class="moncercle">
-						</div>
-					</div>
+            <div class="dim_article">
+                <div>
+                    <div class="titre_h2">
+                        <h2>fazenda architecture</h2>
+                    </div>
 
-					<h2>fazenda architecture</h2>
-				</div>
+                    <p class="adresse">30 Rue du Lac</br>
+                    69003 Lyon</br>
+                    Tél. 06 70 31 03 94</p>
+                </div>
 
-				<p class="adresse">30 Rue du Lac</br>
-				69003 Lyon</br>
-				Tél. 06 70 31 03 94</p>
-			</div>
-		</div>
+		        <div>
+                <img class="image_contact1" src="/wordpress/wp-content/themes/fazenda/img/contact_photo1.jpg" alt="contact" title="contact"/>
+                </div>
+	    </div>
+    </div>
 
-		<img class="image_contact1" src="/wordpress/wp-content/themes/fazenda/img/contact_photo1.jpg" alt="contact" title="contact"/>
-	</div>
-		 
-	<div class="section2">
+	<div class="li_article_2 dim_article_2">
 		<div>
 			<img class="image_contact2" src="/wordpress/wp-content/themes/fazenda/img/contact_photo2.jpg" alt="contact" title="contact"/>
 		</div>
 			
 		<div>
-			<div class="titre_h2">	
-				<div class="cerclecontact">
-					<div  class="moncercle">
-				</div>
-				</div>
+			<div class="titre_h2">
 				<h2>nous écrire</h2>
 			</div>		
 			
