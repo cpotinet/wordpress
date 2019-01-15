@@ -124,10 +124,60 @@
 
         ?>
 
+
         <?php
     }
-
     ?>
+
+    <?php
+
+
+    //partie test
+    /*
+    global $wp_query;
+
+    $args = array(
+        'posts_per_page' => 4,
+        'post_type' => 'post',
+        'paged' => '',
+    );
+
+    $args = array_merge( $wp_query->query, array( 'posts_per_page' => 6 ) );
+    $big = 999999999;
+
+    echo paginate_links( array( // Plus d'info sur les arguments possibles : https://codex.wordpress.org/Function_Reference/paginate_links
+        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+        'format' => '?paged=%#%',
+        'current' => max( 1, get_query_var('paged') ),
+        'total' => $nbpages,
+        'posts_per_page' => $args) );
+    */
+    //fin partie test
+
+?>
 </ul>
+
+<?php
+/*
+global $wp_query;
+
+$args = array(
+    'posts_per_page' => 4,
+    'post_type' => 'post',
+    'paged' => '',
+);
+
+$args = array_merge( $wp_query->query, array( 'posts_per_page' => 4 ) );
+$big = 999999999;
+
+echo paginate_links( array( // Plus d'info sur les arguments possibles : https://codex.wordpress.org/Function_Reference/paginate_links
+    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+    'format' => '?paged=%#%',
+    'current' => max( 1, get_query_var('paged') ),
+    'total' => $nbpages,
+    'posts_per_page' => 4) );
+*/
+?>
+
 
 

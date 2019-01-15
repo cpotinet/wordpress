@@ -68,7 +68,7 @@
 
                         <nav id="site-navigation " role="navigation" >
                             <form for="toggle" class="menu-position"></form>
-                            <input type="checkbox" name="toggle" value="toggle" id="toggle">
+                            <input type="checkbox" name="toggle" value="toggle" id="toggle" class="header_checkbox">
                             <div class="burger">
                                 <div class="icon">
                                 </div>

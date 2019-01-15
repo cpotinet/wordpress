@@ -5,16 +5,16 @@ get_header(); global $post; $post_slug=$post->post_name;
 
 
 <div class="post_head">
-    
-		
+
+    <div class="post_title">
+        <h1 class="post_title">
+            <?php  echo $post->post_title; ?>
+        </h1>
+    </div>
 
 	<div class="">
 		<div class="li_article">
-			<div class="post_title">	
-				<h1 class="post_title">
-					<?php  echo $post->post_title; ?>
-				</h1>
-			</div>
+
 
             <div class="dim_article">
                 <div>

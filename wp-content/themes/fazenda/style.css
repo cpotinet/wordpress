@@ -3606,15 +3606,20 @@ body.search-no-results .page-header {
  */
 
 .site-footer {
-	padding: 0 7.6923% 1.75em;
+	padding: 0 0 1em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+
 }
 
-.site-info {
+/*.site-info {
 	color: #686868;
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
-}
+}*/
 
 .site-info a {
 	color: #686868;
@@ -4505,6 +4510,7 @@ input, textarea {
 	.article_bouton_2{
 		display: flex;
 		justify-content: end;
+		float: right;
 	}
 
 	.content-area {
@@ -4532,6 +4538,7 @@ input, textarea {
 	.article_bouton{
 		display: flex;
 		justify-content: end;
+		float: right;
 	}
 
 	.contenu_projet {
@@ -4970,14 +4977,18 @@ nav ul.menu li {
 }
 
 input[type="checkbox"] {
-	display: none;
+
 	position: absolute;
 	right: 0;
 	margin: 1rem;
 	width: 1.5rem;
 	height: 1.5rem;
-	opacity: 0;
 	z-index: 2;
+}
+
+.header_checkbox{
+	display: none;
+	opacity: 0;
 }
 input[type="checkbox"]:hover {
 	cursor: pointer;
@@ -5048,7 +5059,7 @@ input[type="checkbox"]:checked ~ .burger .icon {
 	}
 
 	.li_article, .li_article_2 {
-		display: inline;
+		display: flex;
 	}
 
 	.position_article_2{
@@ -5239,7 +5250,8 @@ input[type="checkbox"]:checked ~ .burger .icon {
 	}
 
 	.article_bouton_2{
-		padding-left: 92%;
+		padding-left: 41em;
+		justify-content: initial;
 	}
 
 	.article_bouton{
@@ -5419,10 +5431,6 @@ input[type="checkbox"]:checked ~ .burger .icon {
 	.bouton_submit{
 		float: right;
 	}
-
-	.site-info{
-		font-size: 0.75rem;
-	}
 }
 /*#endregion 460px et -*/
 
@@ -5478,6 +5486,10 @@ input[type="checkbox"]:checked ~ .burger .icon {
 /*#region 768px_application*/
 
 @media only screen and (max-width:768px) {
+	.site-info {
+		font-size: 0.7rem;
+	}
+
 	.subtitle-list-style-single {
 		position: relative;
 		float: right;
@@ -5512,11 +5524,75 @@ input[type="checkbox"]:checked ~ .burger .icon {
 		margin: 0;
 	}
 
+	.article_entier {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	.article_flex {
+		display: block;
+		justify-content: space-between;
+		margin-top: 1em;
+	}
+
 	.single-article-img-container {
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+
+	.slides li.ms-image.flex-active-slide .logo_home_commun span
+	{
+		content: "";
+		position: absolute;
+		z-index: 11;
+		left: 4em;
+		top: 14rem;
+		width: 25rem;
+		height: 3rem;
+		background: url('img/fazenda3.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
+	}
+
+	.slides li.slide-136.flex-active-slide .logo_home span
+	{
+		background: url('img/fazenda12.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
+		margin-top: -1rem;
+	}
+	.slides li.slide-138.flex-active-slide .logo_home span
+	{
+		background: url('img/fazenda12.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
+	}
+	.slides li.slide-143.flex-active-slide .logo_home span
+	{
+		background: url('img/fazenda3.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
+	}
+
+	.slides li.slide-191.flex-active-slide .logo_home_agence span
+	{
+		background: url('img/fazenda12.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
+	}
+	.slides li.slide-193.flex-active-slide .logo_home_agence span
+	{
+		background: url('img/fazenda12.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
+	}
+	.slides li.slide-194.flex-active-slide .logo_home_agence span
+	{
+		background: url('img/fazenda3.png');
+		background-repeat: no-repeat;
+		background-size: 25rem;
 	}
 }
 
@@ -5578,6 +5654,70 @@ input[type="checkbox"]:checked ~ .burger .icon {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+	.slides li.ms-image.flex-active-slide .logo_home_commun span
+	{
+		content: "";
+		position: absolute;
+		z-index: 11;
+		left: 4em;
+		top: 14rem;
+		width: 25rem;
+		height: 3rem;
+		background: url('img/fazenda_mobile_noirblanc.png');
+		background-repeat: no-repeat;
+
+	}
+
+	.slides li.slide-136.flex-active-slide .logo_home span
+	{
+		background: url('img/fazenda_mobile_blancbleu.png');
+		background-repeat: no-repeat;
+
+		margin-top: -1rem;
+	}
+	.slides li.slide-138.flex-active-slide .logo_home span
+	{
+		background: url('img/fazenda_mobile_blancbleu.png');
+		background-repeat: no-repeat;
+
+	}
+	.slides li.slide-143.flex-active-slide .logo_home span
+	{
+		background: url('img/fazenda_mobile_noirblanc.png');
+		background-repeat: no-repeat;
+
+	}
+
+	.slides li.slide-191.flex-active-slide .logo_home_agence span
+	{
+		background: url('img/fazenda_mobile_blancbleu.png');
+		background-repeat: no-repeat;
+
+	}
+	.slides li.slide-193.flex-active-slide .logo_home_agence span
+	{
+		background: url('img/fazenda_mobile_blancbleu.png');
+		background-repeat: no-repeat;
+
+	}
+	.slides li.slide-194.flex-active-slide .logo_home_agence span
+	{
+		background: url('img/fazenda_mobile_noirblanc.png');
+		background-repeat: no-repeat;
+
+	}
+
+	.slides li.ms-image.flex-active-slide .logo_home_agence span, .slides li.ms-image.flex-active-slide .logo_home_commun span, .slides li.ms-image.flex-active-slide .logo_home span {
+		top: 2.25rem;
+		height: 1rem;
+		margin: 0 1rem;
+		width: 20rem;
+	}
+
+	.site-info {
+		 font-size: 0.6rem;
+	 }
 }
 
 /*endregion*/

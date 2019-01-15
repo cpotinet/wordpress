@@ -19,25 +19,20 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
+            $count = 0;
+            while ( have_posts() ) : the_post();
+                if($count%2==0)
+                {
+                    get_template_part( 'template-parts/content','category2' );
+                    $count = $count+1;
+                }
+                else {
+                    get_template_part( 'template-parts/content','category1' );
+                    $count = $count+1;
+                }
+            endwhile;
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
-
-			// End the loop.
-			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
+             theme_pagination();
 
 		// If no content, include the "No posts found" template.
 		else :

@@ -28,6 +28,7 @@ $soustitre = chope_string_entre_deux_delimiteur('<h2>',  $content, '</h2>');
 
 if($i%2 == 0)
 {
+    echo 'testtesttest ';
     echo '<div>';
     echo '<div>';
     echo '<div>';
@@ -53,7 +54,7 @@ if($i%2 == 0)
 else
 {
     echo '<div>';
-
+        echo 'testtesttest 222222222222222222222222';
     echo '</div>';
 }
 ?>
