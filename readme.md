@@ -54,27 +54,27 @@ Pour voir s'il y a des fichiers modifiées
 git status
 
 Pour plusieurs elements
-git add . 
+>git add . 
 
 pour un fichier (recommandé)
-git add [nomFichier]
+>git add [nomFichier]
 
 ### 2 - Créer le commit 
 
 Faire un commit des fichiers ajouter
-git commit -m "message à mettre"
+>git commit -m "message à mettre"
 
 === Permet de mettre un message au commit indispensable pour avoir des traces de l'activité
 
 ### 3 Push
 
 Envoyer au serveur
-git push
+>git push
 
 ## 4 Recupérer le code 
 
 Permet de rapatrier le code rajouter sur son PC en local
-git pull
+>git pull
 
 ## 5 branch
 
@@ -91,6 +91,13 @@ copier l'url donné en dessous
 rentrer l'url dans le navigateur 
 puis créer la premiére merge. (faire ceci une fois aprés tous les commit seront affiché directement )
 >git checkout [nom_branch]
+
+Créer une branch
+> git clone [url_projet] -b [nom_branch]
+
+ou
+
+> git clone [url_projet] --branch [nom_branch]
 
 # 3 - Régle de nommage 
 
