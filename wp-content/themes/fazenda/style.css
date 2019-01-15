@@ -1397,6 +1397,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*#endregion*/
 
 /*#region Commun*/
+
+span.wpcf7-list-item {
+
+	display: flex;
+	margin: 0 0 0 1em;
+
+}
+
+
+
+.wpcf7-list-item input[type="checkbox"]
+{
+	position: initial;
+	right: 0;
+	margin: 1rem;
+	width: 0;
+	height: 0;
+	z-index: 0;
+}
+
 .subtitle-list-style {
 	position: relative;
 	left:1rem;
@@ -1406,6 +1426,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .subtitle-list-style-single {
 	position: relative;
 	float: right;
+}
+
+.image_contact2 {
+	height:100%;
 }
 
 .subtitle-list-style-single::before{
@@ -5486,6 +5510,20 @@ input[type="checkbox"]:checked ~ .burger .icon {
 /*#region 768px_application*/
 
 @media only screen and (max-width:768px) {
+	.image_contact2 {
+		display:none;
+	}
+
+	.wpcf7-list-item input[type="checkbox"] {
+
+		position: initial;
+		right: 0;
+		margin: 0.5rem;
+		width: 0;
+		height: 0;
+		z-index: 0;
+	}
+
 	.site-info {
 		font-size: 0.7rem;
 	}

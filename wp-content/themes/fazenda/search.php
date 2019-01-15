@@ -12,6 +12,13 @@ get_header(); ?>
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+            <div class="parentBouton_retour_blog">
+                <div class="enfantBouton_retour_blog">
+                    <?php echo '<div class="subtitle-list-style-single">
+                <a href="' . "'/wordpress/blog/'" . '" class="abouton_retour_blog">retour à la liste des articles</a>  ';?>
+                </div>
+            </div>
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

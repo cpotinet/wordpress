@@ -1112,13 +1112,11 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 					}
 					$returnvar .= '
 						<ul>';
-
 						$i = 0;
 						
 						foreach($fields as $field)
 						{
 							//special cases - post_types & post_date.. all others assumed regular wp taxonomy
-							
 							if($field == "search")
 							{
 								//$returnvar .=  '<li>';
@@ -1147,14 +1145,16 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 								
 								$returnvar .= $this->build_post_type_element($types, $labels, $post_types, $field, $all_items_labels, $i);
 
+
 							}
 							else if($field == 'post_date')
 							{
 								$returnvar .= $this->build_post_date_element($labels, $i, $types, $field);
+
 							}
 							else
 							{	
-								$returnvar .= $this->build_taxonomy_element($types, $labels, $field, $hierarchical, $hide_empty, $show_count, $order_by, $order_dir, $operators, $all_items_labels, $i);
+								$returnvar .= $this->build_taxonomy_element($types, $labels, $field, $hierarchical, $hide_empty, $show_count, $order_by, $order_dir, $operators,array('', 'Catégorie','Année')/*$all_items_labels*/, $i);
 							}
 							$i++;
 
